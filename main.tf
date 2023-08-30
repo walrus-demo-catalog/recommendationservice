@@ -10,12 +10,12 @@ terraform {
 data "kubectl_path_documents" "manifest" {
   pattern = "${path.module}/manifest.yaml"
   vars = {
-    namespace        = local.namespace 
-    image_registry   = var.image_registry
-    image_repository = var.image_repository
-    image_version    = var.image_version
-    replicas         = var.replicas
-    rediscart_name   = var.rediscart_name
+    namespace                    = local.namespace 
+    image_registry               = var.image_registry
+    image_repository             = var.image_repository
+    image_version                = var.image_version
+    replicas                     = var.replicas
+    productcatalogservice_name   = var.productcatalogservice_name
   }
 }
 

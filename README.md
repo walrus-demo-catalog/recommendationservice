@@ -28,12 +28,11 @@ No modules.
 | <a name="input_image_registry"></a> [image\_registry](#input\_image\_registry) | Image registry | `string` | `"docker.io"` | no |
 | <a name="input_image_repository"></a> [image\_repository](#input\_image\_repository) | Image repository | `string` | `"liyinlin"` | no |
 | <a name="input_image_version"></a> [image\_version](#input\_image\_version) | Image tag | `string` | `"v0.8.0"` | no |
-| <a name="input_mysql_name"></a> [mysql\_name](#input\_mysql\_name) | The mysql service name in env to connect | `string` | `"mysql"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the deployment resource. Auto-generated if empty. | `string` | `""` | no |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace to deploy. Auto-generated if empty. | `string` | `""` | no |
-| <a name="input_redis_name"></a> [redis\_name](#input\_redis\_name) | The redis service name in env to connect | `string` | `"redis-cart"` | no |
+| <a name="input_productcatalogservice_name"></a> [productcatalogservice\_name](#input\_productcatalogservice\_name) | The product catalog service name in env to connect | `string` | `"productcatalogservice"` | no |
 | <a name="input_replicas"></a> [replicas](#input\_replicas) | Replicas to deploy | `number` | `1` | no |
-| <a name="input_service_name"></a> [service\_name](#input\_service\_name) | Service name | `string` | `"cartservice"` | no |
+| <a name="input_service_name"></a> [service\_name](#input\_service\_name) | Service name | `string` | `"recommendationservice"` | no |
 | <a name="input_walrus_metadata_namespace_name"></a> [walrus\_metadata\_namespace\_name](#input\_walrus\_metadata\_namespace\_name) | Walrus metadata namespace name. | `string` | `""` | no |
 | <a name="input_walrus_metadata_service_name"></a> [walrus\_metadata\_service\_name](#input\_walrus\_metadata\_service\_name) | Walrus metadata service name. | `string` | `""` | no |
 

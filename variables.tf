@@ -23,19 +23,11 @@ variable "replicas" {
 }
 
 # @group "Kubernetes Configuration"
-# @label "The Redis Service Name"
-variable "redis_name" {
+# @label "The Product Catalog Service Name"
+variable "productcatalogservice_name" {
   type        = string
-  description = "The redis service name in env to connect"
-  default     = "redis-cart"
-}
-
-# @group "Kubernetes Configuration"
-# @label "The MySQL Service Name"
-variable "mysql_name" {
-  type        = string
-  description = "The mysql service name in env to connect"
-  default     = "mysql"
+  description = "The product catalog service name in env to connect"
+  default     = "productcatalogservice"
 }
 
 # @group "Image Configuration"
@@ -68,7 +60,7 @@ variable "image_version" {
 variable "service_name" {
   type        = string
   description = "Service name"
-  default     = "cartservice"
+  default     = "recommendationservice"
 }
 
 # @hidden
