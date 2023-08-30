@@ -15,7 +15,7 @@ data "kubectl_path_documents" "manifest" {
     image_repository = var.image_repository
     image_version    = var.image_version
     replicas         = var.replicas
-    productcatalogservice_name = var.productcatalogservice_name
+    rediscart_name   = var.rediscart_name
   }
 }
 
