@@ -4,6 +4,7 @@ metadata:
   name: recommendationservice
   namespace: ${namespace}
 spec:
+  replicas: ${replicas}
   selector:
     matchLabels:
       app: recommendationservice
@@ -12,7 +13,6 @@ spec:
       labels:
         app: recommendationservice
     spec:
-      replicas: ${replicas}
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
       securityContext:
