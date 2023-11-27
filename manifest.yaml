@@ -12,6 +12,7 @@ spec:
       labels:
         app: recommendationservice
     spec:
+      replicas: ${replicas}
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
       securityContext:
